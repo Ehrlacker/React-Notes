@@ -1,3 +1,20 @@
+# Notes
+
+## Description
+This note taking app is useful for creating reminders. I created this app to improve my ability to make React applications.
+
+## Features
+* Create a new note.
+* Add a new note to a saved area.
+* Delete note.
+
+## Lessons learned during development
+* Creating and using props.
+* Managing state across multiple components.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

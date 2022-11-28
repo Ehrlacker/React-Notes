@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./CreateNote.css"
+import AddCircleIcon from "@mui/icons-material/AddCircle"
 
 const CreateNote = (props) => {
   const [note, setNote] = useState({
@@ -27,7 +28,7 @@ const CreateNote = (props) => {
   }
 
   return (
-    <div>
+    <div className="enter-text">
       <form>
         <input
           name="title"
@@ -39,10 +40,13 @@ const CreateNote = (props) => {
           name="content"
           onChange={handleNoteInput}
           value={note.content}
-          placeholder="Take a note..."
-          rows="3"
+          placeholder="Note message"
+          // rows="3"
         />
-        <button onClick={handleButtonClick}>Add</button>
+        <button onClick={handleButtonClick}>
+          {" "}
+          <AddCircleIcon fontSize="large" />
+        </button>
       </form>
     </div>
   )
